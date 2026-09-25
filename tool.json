@@ -1,0 +1,314 @@
+{
+  "tool": {
+    "id": "escore-de-alvarado",
+    "title": "Escore de Alvarado",
+    "short": "Probabilidade de apendicite aguda",
+    "desc": "Calcule o escore de Alvarado (MANTRELS) na dor abdominal: migração da dor, anorexia, náuseas, sinais no quadrante inferior direito, febre e leucograma.",
+    "lead": "Escore clínico e laboratorial de 0 a 10 pontos que estima a probabilidade de apendicite aguda em pacientes com dor abdominal e ajuda a decidir entre alta, observação, imagem ou cirurgia.",
+    "spec": [
+      "cirurgia-geral",
+      "medicina-de-emergencia",
+      "cirurgia-pediatrica",
+      "pediatria"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "migra",
+        "Migração da dor para a fossa ilíaca direita",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "anorex",
+        "Anorexia (ou acetona na urina)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "nausea",
+        "Náuseas ou vômitos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "dor",
+        "Dor à palpação da fossa ilíaca direita",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "desc",
+        "Descompressão brusca dolorosa (Blumberg)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "febre",
+        "Temperatura ≥ 37,3 °C",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "leuco",
+        "Leucocitose &gt; 10.000/mm³",
+        "chk",
+        {
+          "pts": 2
+        }
+      ],
+      [
+        "desvio",
+        "Desvio à esquerda (neutrófilos &gt; 75%)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Alvarado",
+      "unit": "de 10",
+      "bands": [
+        [
+          0,
+          "low",
+          "Apendicite improvável (0 a 4)",
+          "Considerar outras causas; reavaliar se os sintomas persistirem."
+        ],
+        [
+          5,
+          "mid",
+          "Compatível com apendicite (5 a 6)",
+          "Observação e reavaliação seriada ou exame de imagem."
+        ],
+        [
+          7,
+          "high",
+          "Apendicite provável (7 a 8)",
+          "Avaliação cirúrgica; imagem conforme o perfil do paciente."
+        ],
+        [
+          9,
+          "high",
+          "Apendicite muito provável (9 a 10)",
+          "Avaliação cirúrgica."
+        ]
+      ]
+    },
+    "formula": "<p>MANTRELS: <strong>M</strong>igração da dor (1), <strong>A</strong>norexia (1), <strong>N</strong>áuseas/vômitos (1), <strong>T</strong>enderness (dor) na fossa ilíaca direita (2), <strong>R</strong>ebound (descompressão dolorosa, 1), <strong>E</strong>levação da temperatura (1), <strong>L</strong>eucocitose (2) e <strong>S</strong>hift (desvio à esquerda, 1). Total de 0 a 10.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação (Alvarado 1986)"
+      ],
+      [
+        "0 a 4",
+        "Apendicite improvável"
+      ],
+      [
+        "5 a 6",
+        "Compatível com apendicite"
+      ],
+      [
+        "7 a 8",
+        "Apendicite provável"
+      ],
+      [
+        "9 a 10",
+        "Apendicite muito provável"
+      ]
+    ],
+    "tips": [
+      "O escore é melhor para <strong>afastar</strong> que para confirmar: valores baixos têm alta sensibilidade; valores altos não dispensam imagem em mulheres jovens.",
+      "Em mulheres em idade fértil, pense em causas ginecológicas (gravidez ectópica, cisto roto, doença inflamatória pélvica) e peça beta-hCG.",
+      "As diretrizes WSES 2020 preferem o escore AIR ou o AAS para estratificar o risco em adultos.",
+      "Em crianças, o Alvarado e o PAS (Pediatric Appendicitis Score) ajudam, mas o ultrassom continua sendo o primeiro exame de imagem.",
+      "Idosos e imunossuprimidos têm apresentação atípica e escores falsamente baixos."
+    ],
+    "sources": [
+      [
+        "Alvarado A. A practical score for the early diagnosis of acute appendicitis. Ann Emerg Med, 1986.",
+        "https://doi.org/10.1016/S0196-0644(86)80993-3"
+      ],
+      [
+        "Di Saverio S et al. Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines. World J Emerg Surg, 2020.",
+        "https://doi.org/10.1186/s13017-020-00306-3"
+      ]
+    ],
+    "cases": [
+      [
+        "Náuseas e dor na FID: 3 pontos (improvável)",
+        {
+          "nausea": true,
+          "dor": true
+        },
+        {
+          "score": 3,
+          "level": "low"
+        }
+      ],
+      [
+        "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        {
+          "migra": true,
+          "anorex": true,
+          "dor": true,
+          "febre": true
+        },
+        {
+          "score": 5,
+          "level": "mid"
+        }
+      ],
+      [
+        "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        {
+          "migra": true,
+          "nausea": true,
+          "dor": true,
+          "desc": true,
+          "leuco": true
+        },
+        {
+          "score": 7,
+          "level": "high",
+          "verdict": "provável"
+        }
+      ],
+      [
+        "Todos os itens: 10 pontos (muito provável)",
+        {
+          "migra": true,
+          "anorex": true,
+          "nausea": true,
+          "dor": true,
+          "desc": true,
+          "febre": true,
+          "leuco": true,
+          "desvio": true
+        },
+        {
+          "score": 10,
+          "level": "high",
+          "verdict": "muito provável"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 10",
+      "label": "Alvarado",
+      "fields": [
+        [
+          "migra",
+          "chk",
+          1
+        ],
+        [
+          "anorex",
+          "chk",
+          1
+        ],
+        [
+          "nausea",
+          "chk",
+          1
+        ],
+        [
+          "dor",
+          "chk",
+          2
+        ],
+        [
+          "desc",
+          "chk",
+          1
+        ],
+        [
+          "febre",
+          "chk",
+          1
+        ],
+        [
+          "leuco",
+          "chk",
+          2
+        ],
+        [
+          "desvio",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Apendicite improvável (0 a 4)",
+          "Considerar outras causas; reavaliar se os sintomas persistirem."
+        ],
+        [
+          5,
+          "mid",
+          "Compatível com apendicite (5 a 6)",
+          "Observação e reavaliação seriada ou exame de imagem."
+        ],
+        [
+          7,
+          "high",
+          "Apendicite provável (7 a 8)",
+          "Avaliação cirúrgica; imagem conforme o perfil do paciente."
+        ],
+        [
+          9,
+          "high",
+          "Apendicite muito provável (9 a 10)",
+          "Avaliação cirúrgica."
+        ]
+      ]
+    },
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}

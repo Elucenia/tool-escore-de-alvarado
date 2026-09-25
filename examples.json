@@ -1,0 +1,90 @@
+[
+  {
+    "label": "Náuseas e dor na FID: 3 pontos (improvável)",
+    "input": {
+      "nausea": true,
+      "dor": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "low"
+    },
+    "originalInput": {
+      "nausea": true,
+      "dor": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+    "input": {
+      "migra": true,
+      "anorex": true,
+      "dor": true,
+      "febre": true
+    },
+    "expected": {
+      "score": 5,
+      "level": "mid"
+    },
+    "originalInput": {
+      "migra": true,
+      "anorex": true,
+      "dor": true,
+      "febre": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+    "input": {
+      "migra": true,
+      "nausea": true,
+      "dor": true,
+      "desc": true,
+      "leuco": true
+    },
+    "expected": {
+      "score": 7,
+      "level": "high",
+      "verdict": "provável"
+    },
+    "originalInput": {
+      "migra": true,
+      "nausea": true,
+      "dor": true,
+      "desc": true,
+      "leuco": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos os itens: 10 pontos (muito provável)",
+    "input": {
+      "migra": true,
+      "anorex": true,
+      "nausea": true,
+      "dor": true,
+      "desc": true,
+      "febre": true,
+      "leuco": true,
+      "desvio": true
+    },
+    "expected": {
+      "score": 10,
+      "level": "high",
+      "verdict": "muito provável"
+    },
+    "originalInput": {
+      "migra": true,
+      "anorex": true,
+      "nausea": true,
+      "dor": true,
+      "desc": true,
+      "febre": true,
+      "leuco": true,
+      "desvio": true
+    },
+    "expandedZeroOptions": []
+  }
+]
