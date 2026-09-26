@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escore-de-alvarado · Elucenia · https://github.com/Elucenia/tool-escore-de-alvarado
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-de-alvarado","title":"Escore de Alvarado","fields":[["migra","Migração da dor para a fossa ilíaca direita","chk",{"pts":1}],["anorex","Anorexia (ou acetona na urina)","chk",{"pts":1}],["nausea","Náuseas ou vômitos","chk",{"pts":1}],["dor","Dor à palpação da fossa ilíaca direita","chk",{"pts":2}],["desc","Descompressão brusca dolorosa (Blumberg)","chk",{"pts":1}],["febre","Temperatura ≥ 37,3 °C","chk",{"pts":1}],["leuco","Leucocitose &gt; 10.000/mm³","chk",{"pts":2}],["desvio","Desvio à esquerda (neutrófilos &gt; 75%)","chk",{"pts":1}]],"config":{"unit":"de 10","label":"Alvarado","fields":[["migra","chk",1],["anorex","chk",1],["nausea","chk",1],["dor","chk",2],["desc","chk",1],["febre","chk",1],["leuco","chk",2],["desvio","chk",1]],"bands":[[0,"low","Apendicite improvável (0 a 4)","Considerar outras causas; reavaliar se os sintomas persistirem."],[5,"mid","Compatível com apendicite (5 a 6)","Observação e reavaliação seriada ou exame de imagem."],[7,"high","Apendicite provável (7 a 8)","Avaliação cirúrgica; imagem conforme o perfil do paciente."],[9,"high","Apendicite muito provável (9 a 10)","Avaliação cirúrgica."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
