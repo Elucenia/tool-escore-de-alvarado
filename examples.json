@@ -1,65 +1,151 @@
 [
   {
-    "label": "Náuseas e dor na FID: 3 pontos (improvável)",
-    "input": {
+    "id": "escore-de-alvarado",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+    "originalInput": {
       "nausea": true,
       "dor": true
+    },
+    "input": {
+      "nausea": true,
+      "dor": true,
+      "migra": false,
+      "anorex": false,
+      "desc": false,
+      "febre": false,
+      "leuco": false,
+      "desvio": false
     },
     "expected": {
       "score": 3,
       "level": "low"
     },
-    "originalInput": {
-      "nausea": true,
-      "dor": true
+    "recordedResult": {
+      "main": [
+        "3",
+        "de 10"
+      ],
+      "label": "Alvarado",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
-    "input": {
+    "id": "escore-de-alvarado",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+    "originalInput": {
       "migra": true,
       "anorex": true,
       "dor": true,
       "febre": true
+    },
+    "input": {
+      "migra": true,
+      "anorex": true,
+      "dor": true,
+      "febre": true,
+      "nausea": false,
+      "desc": false,
+      "leuco": false,
+      "desvio": false
     },
     "expected": {
       "score": 5,
       "level": "mid"
     },
-    "originalInput": {
-      "migra": true,
-      "anorex": true,
-      "dor": true,
-      "febre": true
+    "recordedResult": {
+      "main": [
+        "5",
+        "de 10"
+      ],
+      "label": "Alvarado",
+      "raw": {
+        "score": 5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
-    "input": {
+    "id": "escore-de-alvarado",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+    "originalInput": {
       "migra": true,
       "nausea": true,
       "dor": true,
       "desc": true,
       "leuco": true
+    },
+    "input": {
+      "migra": true,
+      "nausea": true,
+      "dor": true,
+      "desc": true,
+      "leuco": true,
+      "anorex": false,
+      "febre": false,
+      "desvio": false
     },
     "expected": {
       "score": 7,
       "level": "high",
       "verdict": "provável"
     },
+    "recordedResult": {
+      "main": [
+        "7",
+        "de 10"
+      ],
+      "label": "Alvarado",
+      "raw": {
+        "score": 7
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escore-de-alvarado",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Todos os itens: 10 pontos (muito provável)",
     "originalInput": {
       "migra": true,
+      "anorex": true,
       "nausea": true,
       "dor": true,
       "desc": true,
-      "leuco": true
+      "febre": true,
+      "leuco": true,
+      "desvio": true
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Todos os itens: 10 pontos (muito provável)",
     "input": {
       "migra": true,
       "anorex": true,
@@ -75,16 +161,23 @@
       "level": "high",
       "verdict": "muito provável"
     },
-    "originalInput": {
-      "migra": true,
-      "anorex": true,
-      "nausea": true,
-      "dor": true,
-      "desc": true,
-      "febre": true,
-      "leuco": true,
-      "desvio": true
+    "recordedResult": {
+      "main": [
+        "10",
+        "de 10"
+      ],
+      "label": "Alvarado",
+      "raw": {
+        "score": 10
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

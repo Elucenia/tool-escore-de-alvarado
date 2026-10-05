@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean migra",
+    "input": {
+      "nausea": true,
+      "dor": true,
+      "migra": "2",
+      "anorex": false,
+      "desc": false,
+      "febre": false,
+      "leuco": false,
+      "desvio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "migra"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean anorex",
+    "input": {
+      "nausea": true,
+      "dor": true,
+      "migra": false,
+      "anorex": "2",
+      "desc": false,
+      "febre": false,
+      "leuco": false,
+      "desvio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "anorex"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean nausea",
+    "input": {
+      "nausea": "2",
+      "dor": true,
+      "migra": false,
+      "anorex": false,
+      "desc": false,
+      "febre": false,
+      "leuco": false,
+      "desvio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nausea"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dor",
+    "input": {
+      "nausea": true,
+      "dor": "2",
+      "migra": false,
+      "anorex": false,
+      "desc": false,
+      "febre": false,
+      "leuco": false,
+      "desvio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean desc",
+    "input": {
+      "nausea": true,
+      "dor": true,
+      "migra": false,
+      "anorex": false,
+      "desc": "2",
+      "febre": false,
+      "leuco": false,
+      "desvio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean febre",
+    "input": {
+      "nausea": true,
+      "dor": true,
+      "migra": false,
+      "anorex": false,
+      "desc": false,
+      "febre": "2",
+      "leuco": false,
+      "desvio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "febre"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean leuco",
+    "input": {
+      "nausea": true,
+      "dor": true,
+      "migra": false,
+      "anorex": false,
+      "desc": false,
+      "febre": false,
+      "leuco": "2",
+      "desvio": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean desvio",
+    "input": {
+      "nausea": true,
+      "dor": true,
+      "migra": false,
+      "anorex": false,
+      "desc": false,
+      "febre": false,
+      "leuco": false,
+      "desvio": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "desvio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

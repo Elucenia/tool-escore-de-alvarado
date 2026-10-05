@@ -5,139 +5,64 @@
     "short": "Probabilidade de apendicite aguda",
     "desc": "Calcule o escore de Alvarado (MANTRELS) na dor abdominal: migração da dor, anorexia, náuseas, sinais no quadrante inferior direito, febre e leucograma.",
     "lead": "Escore clínico e laboratorial de 0 a 10 pontos que estima a probabilidade de apendicite aguda em pacientes com dor abdominal e ajuda a decidir entre alta, observação, imagem ou cirurgia.",
+    "kind": "Escore",
     "spec": [
       "cirurgia-geral",
       "medicina-de-emergencia",
       "cirurgia-pediatrica",
       "pediatria"
     ],
-    "tier": 1,
     "fields": [
       [
         "migra",
         "Migração da dor para a fossa ilíaca direita",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "anorex",
         "Anorexia (ou acetona na urina)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "nausea",
         "Náuseas ou vômitos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "dor",
         "Dor à palpação da fossa ilíaca direita",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "desc",
         "Descompressão brusca dolorosa (Blumberg)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "febre",
         "Temperatura ≥ 37,3 °C",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "leuco",
         "Leucocitose &gt; 10.000/mm³",
         "chk",
-        {
-          "pts": 2
-        }
+        {}
       ],
       [
         "desvio",
         "Desvio à esquerda (neutrófilos &gt; 75%)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Alvarado",
-      "unit": "de 10",
-      "bands": [
-        [
-          0,
-          "low",
-          "Apendicite improvável (0 a 4)",
-          "Considerar outras causas; reavaliar se os sintomas persistirem."
-        ],
-        [
-          5,
-          "mid",
-          "Compatível com apendicite (5 a 6)",
-          "Observação e reavaliação seriada ou exame de imagem."
-        ],
-        [
-          7,
-          "high",
-          "Apendicite provável (7 a 8)",
-          "Avaliação cirúrgica; imagem conforme o perfil do paciente."
-        ],
-        [
-          9,
-          "high",
-          "Apendicite muito provável (9 a 10)",
-          "Avaliação cirúrgica."
-        ]
-      ]
-    },
     "formula": "<p>MANTRELS: <strong>M</strong>igração da dor (1), <strong>A</strong>norexia (1), <strong>N</strong>áuseas/vômitos (1), <strong>T</strong>enderness (dor) na fossa ilíaca direita (2), <strong>R</strong>ebound (descompressão dolorosa, 1), <strong>E</strong>levação da temperatura (1), <strong>L</strong>eucocitose (2) e <strong>S</strong>hift (desvio à esquerda, 1). Total de 0 a 10.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação (Alvarado 1986)"
-      ],
-      [
-        "0 a 4",
-        "Apendicite improvável"
-      ],
-      [
-        "5 a 6",
-        "Compatível com apendicite"
-      ],
-      [
-        "7 a 8",
-        "Apendicite provável"
-      ],
-      [
-        "9 a 10",
-        "Apendicite muito provável"
-      ]
-    ],
-    "tips": [
-      "O escore é melhor para <strong>afastar</strong> que para confirmar: valores baixos têm alta sensibilidade; valores altos não dispensam imagem em mulheres jovens.",
-      "Em mulheres em idade fértil, pense em causas ginecológicas (gravidez ectópica, cisto roto, doença inflamatória pélvica) e peça beta-hCG.",
-      "As diretrizes WSES 2020 preferem o escore AIR ou o AAS para estratificar o risco em adultos.",
-      "Em crianças, o Alvarado e o PAS (Pediatric Appendicitis Score) ajudam, mas o ultrassom continua sendo o primeiro exame de imagem.",
-      "Idosos e imunossuprimidos têm apresentação atípica e escores falsamente baixos."
-    ],
     "sources": [
       [
         "Alvarado A. A practical score for the early diagnosis of acute appendicitis. Ann Emerg Med, 1986.",
@@ -207,80 +132,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 10",
-      "label": "Alvarado",
-      "fields": [
-        [
-          "migra",
-          "chk",
-          1
-        ],
-        [
-          "anorex",
-          "chk",
-          1
-        ],
-        [
-          "nausea",
-          "chk",
-          1
-        ],
-        [
-          "dor",
-          "chk",
-          2
-        ],
-        [
-          "desc",
-          "chk",
-          1
-        ],
-        [
-          "febre",
-          "chk",
-          1
-        ],
-        [
-          "leuco",
-          "chk",
-          2
-        ],
-        [
-          "desvio",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Apendicite improvável (0 a 4)",
-          "Considerar outras causas; reavaliar se os sintomas persistirem."
-        ],
-        [
-          5,
-          "mid",
-          "Compatível com apendicite (5 a 6)",
-          "Observação e reavaliação seriada ou exame de imagem."
-        ],
-        [
-          7,
-          "high",
-          "Apendicite provável (7 a 8)",
-          "Avaliação cirúrgica; imagem conforme o perfil do paciente."
-        ],
-        [
-          9,
-          "high",
-          "Apendicite muito provável (9 a 10)",
-          "Avaliação cirúrgica."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -289,17 +140,484 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:56:01.122Z",
+      "total": 256,
+      "passed": 256,
+      "sourceRowCount": 256,
+      "uniqueApiInputCount": 256,
+      "sourceContextCount": 256,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "c59ebee35977c49ad1d9f9a7949d2764a569f66da17e4b3ad32719679b1b7131",
+        "total": 256,
+        "bankRowCount": 256,
+        "uniqueApiInputCount": 256,
+        "sourceContextCount": 256,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          },
+          {
+            "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+            "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+          "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+        },
+        "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 256,
+        "uniqueApiInputs": 256,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+          "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+        }
+      },
+      "scope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for escore-de-alvarado. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+      "sources": [
+        {
+          "id": "escore-de-alvarado",
+          "edition": "Alvarado1986 AnnEmergMed15:557–564, original eight-factor MANTRELS",
+          "url": "https://www.uhhospitals.org/-/media/files/services/emergency-services/medical-education/global-health-reading-materials/alvaraedo-practical-score-for-acute-appendicitis.pdf",
+          "doi": "10.1016/S0196-0644(86)80993-3",
+          "access": "Original paper PDF downloaded from hospital educational mirror; Table7 and adjacent Discussion visually inspected. Relevant original Methods and diagnostic-indicant text read.",
+          "readScope": [
+            "PDFp1 Methods/abstract",
+            "PDFp3–4 temperature/WBC/neutrophil passages",
+            "PDFp5 Table7/Discussion, printed561",
+            "PDFp6 diagnostic caution"
+          ],
+          "notVerified": [
+            "Clinical examination and differential diagnosis",
+            "Calibration/modern low-risk pathway",
+            "Automated raw temperature, count or neutrophil classifier"
+          ],
+          "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+      "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+        "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+        "recordedAt": "2026-10-04T18:58:09.417Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+          "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+          "summary": {
+            "checks": 8278,
+            "failed": 0,
+            "methods": 8,
+            "sourceRows": 1132,
+            "uniqueInputs": 1132,
+            "freshExecutions": 3396,
+            "helperAssertions": 6888,
+            "metadataMethods": 128,
+            "metadataRows": 53752,
+            "metadataUnique": 53680,
+            "metadataRepeats": 72
+          },
+          "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+          "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+        },
+        "reviewedBankScope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for escore-de-alvarado. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "currentBinding": {
+          "source26BankSha256": "b33552e00a58749e3199f2d861a6870af9397e0d3460364e8d77d13958e0361b",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/escore-de-alvarado/calculator.js",
+              "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/escore-de-alvarado/calculator.js",
+              "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/escore-de-alvarado/calculator.js",
+              "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 768,
+      "actualVmExecutions": 768,
+      "implementations": [
+        {
+          "id": "escore-de-alvarado",
+          "app": "website",
+          "file": "apps/website/private/tool-code/escore-de-alvarado/calculator.js",
+          "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+        },
+        {
+          "id": "escore-de-alvarado",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/escore-de-alvarado/calculator.js",
+          "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+        },
+        {
+          "id": "escore-de-alvarado",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/escore-de-alvarado/calculator.js",
+          "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+        }
+      ],
+      "qualifications": [
+        "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for escore-de-alvarado. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+        "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Alvarado 1986:MANTRELS 8 itens,0–10; versão comdesvioesquerda",
+    "implementationVersion": "escore-de-alvarado@native-2026-10-03+72bc80b1118a",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3963537/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "MANTRELS: M igração da dor (1), A norexia (1), N áuseas/vômitos (1), T enderness (dor) na fossa ilíaca direita (2), R ebound (descompressão dolorosa, 1), E levação da temperatura (1), L eucocitose (2) e S hift (desvio à esquerda, 1). Total de 0 a 10.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "migra",
+            "label": "Migração da dor para a fossa ilíaca direita",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "anorex",
+            "label": "Anorexia (ou acetona na urina)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nausea",
+            "label": "Náuseas ou vômitos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dor",
+            "label": "Dor à palpação da fossa ilíaca direita",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "desc",
+            "label": "Descompressão brusca dolorosa (Blumberg)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "febre",
+            "label": "Temperatura ≥ 37,3 °C",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "leuco",
+            "label": "Leucocitose &gt; 10.000/mm³",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "desvio",
+            "label": "Desvio à esquerda (neutrófilos &gt; 75%)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "2b7eec82ad235e282efd2db88698526538ba24c72a3e7d13445528e9e5738bf4"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Alvarado A. A practical score for the early diagnosis of acute appendicitis. Ann Emerg Med, 1986.",
+          "url": "https://doi.org/10.1016/S0196-0644(86)80993-3",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A practical score for the early diagnosis of acute appendicitis.",
+            "year": "1986",
+            "firstPublicationDate": "1986-05-01",
+            "doi": "10.1016/s0196-0644(86)80993-3",
+            "pmid": "3963537",
+            "journal": "Annals of emergency medicine",
+            "authors": "Alvarado A."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3963537/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "ec612990f07c3b71169e34fbb2c1607c0a8dff193eeb6b69b37a1e7e9d5ddb23",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Di Saverio S et al. Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines. World J Emerg Surg, 2020.",
+          "url": "https://doi.org/10.1186/s13017-020-00306-3",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines.",
+            "year": "2020",
+            "firstPublicationDate": "2020-04-15",
+            "doi": "10.1186/s13017-020-00306-3",
+            "pmid": "32295644",
+            "pmcid": "PMC7386163",
+            "journal": "World journal of emergency surgery : WJES",
+            "authors": "Di Saverio S, Podda M, De Simone B, Ceresoli M, Augustin G, Gori A, Boermeester M, Sartelli M, Coccolini F, Tarasconi A, De' Angelis N, Weber DG, Tolonen M, Birindelli A, Biffl W, Moore EE, Kelly M, Soreide K, Kashuk J, Ten Broek R, Gomes CA, Sugrue M, Davies RJ, Damaskos D, Leppäniemi A, Kirkpatrick A, Peitzman AB, Fraga GP, Maier RV, Coimbra R, Chiarugi M, Sganga G, Pisanu A, De' Angelis GL, Tan E, Van Goor H, Pata F, Di Carlo I, Chiara O, Litvin A, Campanile FC, Sakakushev B, Tomadze G, Demetrashvili Z, Latifi R, Abu-Zidan F, Romeo O, Segovia-Lohse H, Baiocchi G, Costa D, Rizoli S, Balogh ZJ, Bendinelli C, Scalea T, Ivatury R, Velmahos G, Andersson R, Kluger Y, Ansaloni L, Catena F."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7386163/",
+          "abstractAvailable": true,
+          "fullTextSha256": "5c2a6588ab31e6ad8e23ad9e6d697845109b130d9721688456282935d13f3c47",
+          "abstractSha256": "02d1a7f9b15de63f00daf0b514ceee08be40fc4d6eabdfd8d508dd71360d8ad3",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:56:01.122Z",
+        "total": 256,
+        "passed": 256,
+        "sourceRowCount": 256,
+        "uniqueApiInputCount": 256,
+        "sourceContextCount": 256,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "c59ebee35977c49ad1d9f9a7949d2764a569f66da17e4b3ad32719679b1b7131",
+          "total": 256,
+          "bankRowCount": 256,
+          "uniqueApiInputCount": 256,
+          "sourceContextCount": 256,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+              "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+            },
+            {
+              "file": "reports/review-20261003/eight-risk-independent-expectations-final26.json",
+              "sha256": "f5e7d0e09fb4dadaa01dd489cbca1ad3ee8e847771b8409947f3fc43ad7f4a82"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+            "sha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce"
+          },
+          "packagingRequirement": "Copy this score-only complete bank into fresh frozen26 packages only after metadata/source composition and independent peer."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 256,
+          "uniqueApiInputs": 256,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-point-total-independent-expectations-publication-final26.json",
+            "sha256": "8cf68c5141b705cb0ac5cf5f1e06703b9bd76824beea212df5d343f8fd688c58"
+          }
+        },
+        "scope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for escore-de-alvarado. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+        "sources": [
+          {
+            "id": "escore-de-alvarado",
+            "edition": "Alvarado1986 AnnEmergMed15:557–564, original eight-factor MANTRELS",
+            "url": "https://www.uhhospitals.org/-/media/files/services/emergency-services/medical-education/global-health-reading-materials/alvaraedo-practical-score-for-acute-appendicitis.pdf",
+            "doi": "10.1016/S0196-0644(86)80993-3",
+            "access": "Original paper PDF downloaded from hospital educational mirror; Table7 and adjacent Discussion visually inspected. Relevant original Methods and diagnostic-indicant text read.",
+            "readScope": [
+              "PDFp1 Methods/abstract",
+              "PDFp3–4 temperature/WBC/neutrophil passages",
+              "PDFp5 Table7/Discussion, printed561",
+              "PDFp6 diagnostic caution"
+            ],
+            "notVerified": [
+              "Clinical examination and differential diagnosis",
+              "Calibration/modern low-risk pathway",
+              "Automated raw temperature, count or neutrophil classifier"
+            ],
+            "sourceComponent": "Selected integer point sum only; detailed clinical cohort/band facts remain in the frozen original source review."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-point-total-independent-check-publication-final26-r2.json",
+        "evidenceSha256": "f22416952f317ef50932276df98da8fd5ffe42b9130768b858ef17eaf21d38ce",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-risk-independent-source-check-final26.json",
+          "sha256": "b816fcbdbc88a75d30dba462f1d7a1ecfacb49b3d5487709ee9d1bd470c6d832"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred.",
+          "recordedAt": "2026-10-04T18:58:09.417Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Metadata/bank/helper peer before root composition and application; clinical approval not inferred."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-independent-peer-final26-r2.json",
+            "sha256": "6d1b854d021eef9f0f5916ed7f81a70dc8359dae5824f2508c70d29b33732d5c",
+            "summary": {
+              "checks": 8278,
+              "failed": 0,
+              "methods": 8,
+              "sourceRows": 1132,
+              "uniqueInputs": 1132,
+              "freshExecutions": 3396,
+              "helperAssertions": 6888,
+              "metadataMethods": 128,
+              "metadataRows": 53752,
+              "metadataUnique": 53680,
+              "metadataRepeats": 72
+            },
+            "scope": "Root independent peer of exact46 preimages/afterimages; independently frozen1132 input/expected objects checked before imports; public bank numeric projection excludes untested survival, zones, prose and risk codes. Original862fixtures, fields, methods, versions and approvals retained. Exact helper reversal restores all18 previous scopes;24 fresh Node helper executions replay all8 selected-point components without clinical approval."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-point-total-source-evidence-application-final26.json",
+            "sha256": "ff192c36cc1774e583fe2b8bcdd2e10b275e774ff633d180534b012cfe5b87e3"
+          },
+          "reviewedBankScope": "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for escore-de-alvarado. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "currentBinding": {
+            "source26BankSha256": "b33552e00a58749e3199f2d861a6870af9397e0d3460364e8d77d13958e0361b",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/escore-de-alvarado/calculator.js",
+                "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/escore-de-alvarado/calculator.js",
+                "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/escore-de-alvarado/calculator.js",
+                "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 768,
+        "actualVmExecutions": 768,
+        "implementations": [
+          {
+            "id": "escore-de-alvarado",
+            "app": "website",
+            "file": "apps/website/private/tool-code/escore-de-alvarado/calculator.js",
+            "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+          },
+          {
+            "id": "escore-de-alvarado",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/escore-de-alvarado/calculator.js",
+            "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+          },
+          {
+            "id": "escore-de-alvarado",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/escore-de-alvarado/calculator.js",
+            "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+          }
+        ],
+        "qualifications": [
+          "Exact weighted integer sum of 256 exhaustive represented caller-selected point/binary tuples for escore-de-alvarado. Raw score only; clinical labels/cutoffs/bands, patient-factor assessment, diagnostic/treatment decisions, risk and cohort probabilities, predictive validity and complete source conformance excluded.",
+          "All862 historical fixtures and every field/formula/version/approval unchanged by this candidate. Original source/clinical failures and edition warnings are not overwritten.",
+          "Four inline metadata rows are only a subset of the complete hashed downloadable bank. Independent professional/clinical/rights and full-method approvals are not performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+    },
+    "limits": "O Alvarado 1986 foi elaborado a partir de 305 pacientes hospitalizados com dor abdominal sugestiva de apendicite e oito fatores clínicos/laboratoriais. O resumo original não valida automaticamente diferentes faixas etárias, gestantes ou estratégias de alta/imagem. Os limiares de decisão e a população da versão usada devem ser conferidos separadamente; a ferramenta implementa a variante que inclui desvio à esquerda.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.883Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Faixas etárias, exclusões e calibração por sexo/crianças/gestação, limiares de decisão e estratégias de alta/imagem não estão no resumo original."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-de-alvarado/calculator.js",
+    "bytes": 5146,
+    "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5e97bca8c52d82b2df2537fa9699c761678b02e6401e1dd1d43c0242d732b9f3",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "4591e40fa00c76d302d5c0afeebf0be5e078c14b90035bb7cf487a6c4038d1c2",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "4591e40fa00c76d302d5c0afeebf0be5e078c14b90035bb7cf487a6c4038d1c2",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
