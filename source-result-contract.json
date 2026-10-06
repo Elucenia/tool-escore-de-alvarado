@@ -1,0 +1,242 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-de-alvarado",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "5aee4669ecc470d09ffb99bc85f57de0c399d080",
+    "oldEngineSha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61",
+    "currentEngineSha256": "c1bf1320977f0a442d090cc6e6a0e4149b24cd40704a9fc577b0ad9110c4a99e"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+      "input": {
+        "nausea": true,
+        "dor": true,
+        "migra": false,
+        "anorex": false,
+        "desc": false,
+        "febre": false,
+        "leuco": false,
+        "desvio": false
+      },
+      "publicOutput": {
+        "id": "escore-de-alvarado",
+        "main": [
+          "3",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "level": "low",
+        "verdict": "Apendicite improvável (0 a 4)",
+        "note": "Considerar outras causas; reavaliar se os sintomas persistirem.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+      "input": {
+        "migra": true,
+        "anorex": true,
+        "dor": true,
+        "febre": true,
+        "nausea": false,
+        "desc": false,
+        "leuco": false,
+        "desvio": false
+      },
+      "publicOutput": {
+        "id": "escore-de-alvarado",
+        "main": [
+          "5",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "level": "mid",
+        "verdict": "Compatível com apendicite (5 a 6)",
+        "note": "Observação e reavaliação seriada ou exame de imagem.",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+      "input": {
+        "migra": true,
+        "nausea": true,
+        "dor": true,
+        "desc": true,
+        "leuco": true,
+        "anorex": false,
+        "febre": false,
+        "desvio": false
+      },
+      "publicOutput": {
+        "id": "escore-de-alvarado",
+        "main": [
+          "7",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "high",
+        "verdict": "provável"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "level": "high",
+        "verdict": "Apendicite provável (7 a 8)",
+        "note": "Avaliação cirúrgica; imagem conforme o perfil do paciente.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos os itens: 10 pontos (muito provável)",
+      "input": {
+        "migra": true,
+        "anorex": true,
+        "nausea": true,
+        "dor": true,
+        "desc": true,
+        "febre": true,
+        "leuco": true,
+        "desvio": true
+      },
+      "publicOutput": {
+        "id": "escore-de-alvarado",
+        "main": [
+          "10",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "raw": {
+          "score": 10
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 10,
+        "level": "high",
+        "verdict": "muito provável"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10",
+          "de 10"
+        ],
+        "label": "Alvarado",
+        "level": "high",
+        "verdict": "Apendicite muito provável (9 a 10)",
+        "note": "Avaliação cirúrgica.",
+        "raw": {
+          "score": 10
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

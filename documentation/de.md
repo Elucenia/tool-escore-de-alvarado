@@ -85,3 +85,35 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Appendizitis unwahrscheinlich (0 bis 4)
+
+Andere Ursachen erwägen; neu beurteilen, wenn die Symptome anhalten.
+
+
+### 2
+
+Mit Appendizitis vereinbar (5 bis 6)
+
+Beobachtung und serielle Neubewertung oder Bildgebung.
+
+
+### 3
+
+Appendizitis wahrscheinlich (7 bis 8)
+
+Chirurgische Beurteilung; Bildgebung entsprechend dem Patientenprofil.
+
+
+### 4
+
+Appendizitis sehr wahrscheinlich (9 bis 10)
+
+Chirurgische Beurteilung.
+

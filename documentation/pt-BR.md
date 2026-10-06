@@ -85,3 +85,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Apendicite improvável (0 a 4)
+
+Considerar outras causas; reavaliar se os sintomas persistirem.
+
+
+### 2
+
+Compatível com apendicite (5 a 6)
+
+Observação e reavaliação seriada ou exame de imagem.
+
+
+### 3
+
+Apendicite provável (7 a 8)
+
+Avaliação cirúrgica; imagem conforme o perfil do paciente.
+
+
+### 4
+
+Apendicite muito provável (9 a 10)
+
+Avaliação cirúrgica.
+

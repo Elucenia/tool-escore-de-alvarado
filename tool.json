@@ -301,7 +301,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Alvarado 1986:MANTRELS 8 itens,0–10; versão comdesvioesquerda",
-    "implementationVersion": "escore-de-alvarado@native-2026-10-03+72bc80b1118a",
+    "implementationVersion": "escore-de-alvarado@native-2026-10-05+c1bf1320977f",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3963537/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -582,7 +582,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+      "implementationHash": "c1bf1320977f0a442d090cc6e6a0e4149b24cd40704a9fc577b0ad9110c4a99e",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-de-alvarado@native-2026-10-03+72bc80b1118a",
+          "previousImplementationHash": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61",
+          "implementationHash": "c1bf1320977f0a442d090cc6e6a0e4149b24cd40704a9fc577b0ad9110c4a99e",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "2b7eec82ad235e282efd2db88698526538ba24c72a3e7d13445528e9e5738bf4",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Alvarado 1986 foi elaborado a partir de 305 pacientes hospitalizados com dor abdominal sugestiva de apendicite e oito fatores clínicos/laboratoriais. O resumo original não valida automaticamente diferentes faixas etárias, gestantes ou estratégias de alta/imagem. Os limiares de decisão e a população da versão usada devem ser conferidos separadamente; a ferramenta implementa a variante que inclui desvio à esquerda.",
     "sourceLimitEvidence": {
@@ -601,20 +629,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-de-alvarado/calculator.js",
-    "bytes": 5146,
-    "sha256": "72bc80b1118a6b3ab24b75a270d3ee4f0cae6f83227391d5c183259522c81e61"
+    "bytes": 5351,
+    "sha256": "c1bf1320977f0a442d090cc6e6a0e4149b24cd40704a9fc577b0ad9110c4a99e"
   },
-  "sourceToolSha256": "5e97bca8c52d82b2df2537fa9699c761678b02e6401e1dd1d43c0242d732b9f3",
+  "sourceToolSha256": "62159a9f57c7ec9c83ca0b0ec2c81e8112cb0527034633c723a0d4b0acf0ca4e",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "4591e40fa00c76d302d5c0afeebf0be5e078c14b90035bb7cf487a6c4038d1c2",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "4591e40fa00c76d302d5c0afeebf0be5e078c14b90035bb7cf487a6c4038d1c2",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -85,3 +85,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Appendicitis unlikely (0 to 4)
+
+Consider other causes; reassess if symptoms persist.
+
+
+### 2
+
+Compatible with appendicitis (5 to 6)
+
+Observation and serial reassessment or imaging examination.
+
+
+### 3
+
+Appendicitis likely (7 to 8)
+
+Surgical evaluation; imaging according to the patient's profile.
+
+
+### 4
+
+Very likely appendicitis (9 to 10)
+
+Surgical evaluation.
+

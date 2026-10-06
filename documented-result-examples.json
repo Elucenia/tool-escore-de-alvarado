@@ -1,0 +1,707 @@
+{
+  "id": "escore-de-alvarado",
+  "implementationVersion": "escore-de-alvarado@native-2026-10-05+c1bf1320977f",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apendicite improvável (0 a 4)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considerar outras causas; reavaliar se os sintomas persistirem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Compatível com apendicite (5 a 6)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Observação e reavaliação seriada ou exame de imagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apendicite provável (7 a 8)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Avaliação cirúrgica; imagem conforme o perfil do paciente.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apendicite muito provável (9 a 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Avaliação cirúrgica.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicitis unlikely (0 to 4)",
+            "locale": "en",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "Consider other causes; reassess if symptoms persist.",
+            "locale": "en",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Compatible with appendicitis (5 to 6)",
+            "locale": "en",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "Observation and serial reassessment or imaging examination.",
+            "locale": "en",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicitis likely (7 to 8)",
+            "locale": "en",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "Surgical evaluation; imaging according to the patient's profile.",
+            "locale": "en",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Very likely appendicitis (9 to 10)",
+            "locale": "en",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "Surgical evaluation.",
+            "locale": "en",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apendicitis improbable (0 a 4)",
+            "locale": "es",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "Considerar otras causas; reevaluar si los síntomas persisten.",
+            "locale": "es",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Compatible con apendicitis (5 a 6)",
+            "locale": "es",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "Observación y reevaluación seriada o examen de imagen.",
+            "locale": "es",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apendicitis probable (7 a 8)",
+            "locale": "es",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "Evaluación quirúrgica; imagen según el perfil del paciente.",
+            "locale": "es",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Apendicitis muy probable (9 a 10)",
+            "locale": "es",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "Evaluación quirúrgica.",
+            "locale": "es",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicite improbable (0 à 4)",
+            "locale": "fr",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "Envisager d'autres causes ; réévaluer si les symptômes persistent.",
+            "locale": "fr",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Compatible avec une appendicite (5 à 6)",
+            "locale": "fr",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "Observation et réévaluation sériée ou examen d'imagerie.",
+            "locale": "fr",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicite probable (7 à 8)",
+            "locale": "fr",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "Évaluation chirurgicale ; imagerie selon le profil du patient.",
+            "locale": "fr",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicite très probable (9 à 10)",
+            "locale": "fr",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "Évaluation chirurgicale.",
+            "locale": "fr",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendizitis unwahrscheinlich (0 bis 4)",
+            "locale": "de",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "Andere Ursachen erwägen; neu beurteilen, wenn die Symptome anhalten.",
+            "locale": "de",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mit Appendizitis vereinbar (5 bis 6)",
+            "locale": "de",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "Beobachtung und serielle Neubewertung oder Bildgebung.",
+            "locale": "de",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendizitis wahrscheinlich (7 bis 8)",
+            "locale": "de",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "Chirurgische Beurteilung; Bildgebung entsprechend dem Patientenprofil.",
+            "locale": "de",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendizitis sehr wahrscheinlich (9 bis 10)",
+            "locale": "de",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "Chirurgische Beurteilung.",
+            "locale": "de",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicite improbabile (0 a 4)",
+            "locale": "it",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "Considerare altre cause; rivalutare se i sintomi persistono.",
+            "locale": "it",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Compatibile con appendicite (5 a 6)",
+            "locale": "it",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "Osservazione e rivalutazione seriale o esame di imaging.",
+            "locale": "it",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicite probabile (7 a 8)",
+            "locale": "it",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "Valutazione chirurgica; imaging in base al profilo del paziente.",
+            "locale": "it",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Appendicite molto probabile (9 a 10)",
+            "locale": "it",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "Valutazione chirurgica.",
+            "locale": "it",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "التهاب الزائدة غير مرجح (0 إلى 4)",
+            "locale": "ar",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "فكّر في أسباب أخرى؛ وأعِد التقييم إذا استمرت الأعراض.",
+            "locale": "ar",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "متوافق مع التهاب الزائدة (5 إلى 6)",
+            "locale": "ar",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "الملاحظة وإعادة التقييم المتسلسل أو فحص التصوير.",
+            "locale": "ar",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "التهاب الزائدة مرجح (7 إلى 8)",
+            "locale": "ar",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "تقييم جراحي؛ التصوير وفقًا لملف المريض.",
+            "locale": "ar",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "التهاب الزائدة الدودية مرجح جدًا (9 إلى 10)",
+            "locale": "ar",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "تقييم جراحي.",
+            "locale": "ar",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阑尾炎不太可能（0到4）",
+            "locale": "zh",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "考虑其他原因；如症状持续则重新评估。",
+            "locale": "zh",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "与阑尾炎相符（5到6）",
+            "locale": "zh",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "观察并连续复评，或进行影像学检查。",
+            "locale": "zh",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阑尾炎可能（7到8）",
+            "locale": "zh",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "外科评估；根据患者情况进行影像学检查。",
+            "locale": "zh",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阑尾炎很可能（9至10）",
+            "locale": "zh",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "外科评估。",
+            "locale": "zh",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "虫垂炎の可能性は低い（0から4）",
+            "locale": "ja",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "他の原因を考慮する。症状が持続する場合は再評価する。",
+            "locale": "ja",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "虫垂炎と一致（5から6）",
+            "locale": "ja",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "経過観察と連続的再評価、または画像検査。",
+            "locale": "ja",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "虫垂炎が疑われる（7から8）",
+            "locale": "ja",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "外科的評価；患者のプロファイルに応じた画像検査。",
+            "locale": "ja",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "虫垂炎の可能性が非常に高い（9～10）",
+            "locale": "ja",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "外科的評価。",
+            "locale": "ja",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Náuseas e dor na FID: 3 pontos (improvável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अपेंडिसाइटिस असंभाव्य (0 से 4)",
+            "locale": "hi",
+            "template": "documented-authored-b7a1a40675c8e3c00e7c"
+          },
+          "note": {
+            "text": "अन्य कारणों पर विचार करें; लक्षण बने रहने पर पुनर्मूल्यांकन करें.",
+            "locale": "hi",
+            "template": "documented-authored-c6cfefa94e4718972b35"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Migração, anorexia, dor na FID e febre: 5 pontos (compatível, limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अपेंडिसाइटिस के अनुरूप (5 से 6)",
+            "locale": "hi",
+            "template": "documented-authored-a697f27572cdb1c8604c"
+          },
+          "note": {
+            "text": "अवलोकन और क्रमिक पुनर्मूल्यांकन या इमेजिंग जांच.",
+            "locale": "hi",
+            "template": "documented-authored-390738122318a1f19c24"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Migração, náuseas, dor na FID, Blumberg e leucocitose: 7 pontos (provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अपेंडिसाइटिस संभावित (7 से 8)",
+            "locale": "hi",
+            "template": "documented-authored-9ff18e35f56dcc3094d4"
+          },
+          "note": {
+            "text": "शल्यकीय मूल्यांकन; रोगी की प्रोफ़ाइल के अनुसार इमेजिंग।",
+            "locale": "hi",
+            "template": "documented-authored-c0629c4bb432e89679c5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Todos os itens: 10 pontos (muito provável)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अपेंडिसाइटिस बहुत संभावित (9 से 10)",
+            "locale": "hi",
+            "template": "documented-authored-f797421099170a7bed83"
+          },
+          "note": {
+            "text": "शल्यकीय मूल्यांकन।",
+            "locale": "hi",
+            "template": "documented-authored-d63a1dc5fb82ffef7d89"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
